@@ -173,3 +173,31 @@ phases:
       cover-function-only: false
       # instrument the file as opposed to the function only
       cover-only: file
+units:
+ - target:
+   - dir: okhttp/build/classes/java/test
+     file: okhttp3/URLConnectionTest$1.class
+     sourceDir: okhttp/src/test/java
+     sourceFile: okhttp3/URLConnectionTest.java
+   - dir: okhttp/build/classes/java/test
+     file: okhttp3/URLConnectionTest.class
+     sourceDir: okhttp/src/test/java
+     sourceFile: okhttp3/URLConnectionTest.java
+   - dir: okhttp/build/classes/java/test
+     file: okhttp3/URLConnectionTest$TransferKind.class
+     sourceDir: okhttp/src/test/java
+     sourceFile: okhttp3/URLConnectionTest.java
+   - dir: okhttp/build/classes/java/test
+     file: okhttp3/URLConnectionTest$WriteKind.class
+     sourceDir: okhttp/src/test/java
+     sourceFile: okhttp3/URLConnectionTest.java
+ - target:
+   - dir: samples/slack/build/classes/java/main
+     file: okhttp3/slack/SlackApi$SlackJsonAdapters.class
+     sourceDir: samples/slack/src/main/java
+     sourceFile: okhttp3/slack/SlackApi.java
+ - target:
+   - dir: samples/guide/build/classes/java/main
+     file: okhttp3/guide/PostExample.class
+     sourceDir: samples/guide/src/main/java
+     sourceFile: okhttp3/guide/PostExample.java
